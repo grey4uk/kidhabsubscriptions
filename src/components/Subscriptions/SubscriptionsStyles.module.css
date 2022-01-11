@@ -1,0 +1,173 @@
+ul,
+ol,
+dl {
+    text-decoration: none;
+    padding: 0 0 20px 20px;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p:not(:last-child) {
+    margin-bottom: 20px
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    width: 100vw;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.alertText {
+    color: red;
+    margin: 0 10px;
+}
+
+.linkText {
+    color: blue;
+    margin: 0 10px;
+    border-bottom: 1px solid blue;
+}
+
+.linkText:hover {
+    color: rgb(173, 13, 236);
+}
+
+.warningText {
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.warningTextLink {
+    color: red;
+    margin: 0 10px;
+    text-transform: lowercase;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebarItem {
+    transition: transform .2s;
+}
+
+.sidebarItem:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.sidebarItem:hover {
+    transform: scale(1.03);
+}
+
+.linkList {
+    list-style: none;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+
+.rulesList {
+    list-style-type: lower-alpha;
+}
+
+.linkListTitle {
+    font-weight: 700;
+}
+
+.linkToItem:hover {
+    color: blue;
+}
+
+.content {
+    width: 80vw;
+    padding: 10px;
+}
+
+.documentTitle {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.startText {
+    padding: 20px 0;
+}
+
+.languageSelect {
+    vertical-align: middle;
+    margin: 20px 0;
+}
+
+.yellowBack {
+    background-color: yellow;
+}
+
+@media (max-width: 767px) {
+
+    .wrapper {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 20vw;
+        padding: 10px;
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    .linkList {
+        width: 15vw;
+        padding: 10px;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        list-style: none;
+    }
+
+    .content {
+        width: 60vw;
+        padding: 40px 0;
+    }
+}
